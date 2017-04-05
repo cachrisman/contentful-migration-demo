@@ -19,7 +19,7 @@ require('yargs')
     return newMigration(argv.name);
   })
   .command('migrate', 'migrate', {}, (argv) => {
-    return migrate(argv.CMA_TOKEN, argv.SPACE_ID);
+    return migrate(argv.cmaToken, argv.spaceId);
   })
   // .strict()
   .help()
